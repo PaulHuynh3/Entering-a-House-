@@ -13,6 +13,7 @@
 		DAF645371F697EBD0036399D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF645351F697EBD0036399D /* Main.storyboard */; };
 		DAF645391F697EBD0036399D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF645381F697EBD0036399D /* Assets.xcassets */; };
 		DAF6453C1F697EBD0036399D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF6453A1F697EBD0036399D /* LaunchScreen.storyboard */; };
+		DAF645511F6996B50036399D /* Rooms.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF645501F6996B50036399D /* Rooms.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DAF645381F697EBD0036399D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF6453B1F697EBD0036399D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF6453D1F697EBD0036399D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAF6454F1F6996B50036399D /* Rooms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rooms.h; sourceTree = "<group>"; };
+		DAF645501F6996B50036399D /* Rooms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rooms.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				DAF645451F69801D0036399D /* Controller */,
 				DAF645431F69800A0036399D /* Model */,
 				DAF6452F1F697EBD0036399D /* AppDelegate.h */,
+				DAF6454F1F6996B50036399D /* Rooms.h */,
+				DAF645501F6996B50036399D /* Rooms.m */,
 				DAF645301F697EBD0036399D /* AppDelegate.m */,
 				DAF645381F697EBD0036399D /* Assets.xcassets */,
 				DAF6453A1F697EBD0036399D /* LaunchScreen.storyboard */,
@@ -176,6 +181,7 @@
 			files = (
 				DAF645341F697EBD0036399D /* ViewController.m in Sources */,
 				DAF645311F697EBD0036399D /* AppDelegate.m in Sources */,
+				DAF645511F6996B50036399D /* Rooms.m in Sources */,
 				DAF6452E1F697EBD0036399D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +341,7 @@
 				DAF645421F697EBD0036399D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
