@@ -9,9 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *frontDoor;
-@property (weak, nonatomic) IBOutlet UIImageView *coatRoom;
+//@property (weak, nonatomic) IBOutlet UIImageView *frontDoor;
+//@property (weak, nonatomic) IBOutlet UIImageView *coatRoom;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonLibraryReturnMain;
 
 
 @end
@@ -20,11 +21,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.frontDoor.image = [UIImage imageNamed:@"front_door.jpg"];
-    self.coatRoom.image = [UIImage imageNamed:@"coat_room.jpg"];
+    //how you will set images individually...
+//    self.frontDoor.image = [UIImage imageNamed:@"front_door.jpg"];
+//    self.coatRoom.image = [UIImage imageNamed:@"coat_room.jpg"];
     
+    //creates a barbuttonitem
+    UIBarButtonItem *returnButton = [[UIBarButtonItem alloc] initWithTitle:@"RETURN" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    self.navigationItem.rightBarButtonItem = returnButton;
     
 }
+
+//method to return to initial screen
+
+- (void) back {
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
 
 
 @end

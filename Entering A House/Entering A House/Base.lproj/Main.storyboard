@@ -21,34 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-jq-iC7">
-                                <rect key="frame" x="0.0" y="72" width="375" height="515"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEj-yL-83b">
                                 <rect key="frame" x="186" y="605" width="173" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Coat Room"/>
                                 <connections>
-                                    <segue destination="C78-3R-3wU" kind="showDetail" id="gjy-VA-zXf"/>
+                                    <segue destination="C78-3R-3wU" kind="show" id="c4V-LS-t53"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_door" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-jq-iC7">
+                                <rect key="frame" x="0.0" y="82" width="375" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="huc-IG-fGJ"/>
-                    <connections>
-                        <outlet property="frontDoor" destination="bpt-jq-iC7" id="sva-r5-5Z3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903.20000000000005" y="-560.86956521739137"/>
+            <point key="canvasLocation" x="510" y="-541"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3PG-56-AiB">
             <objects>
-                <viewController id="ofz-MS-MOg" sceneMemberID="viewController">
+                <viewController id="ofz-MS-MOg" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dkj-z1-rTT"/>
                         <viewControllerLayoutGuide type="bottom" id="Ue5-6D-fIb"/>
@@ -72,7 +69,7 @@
         <!--View Controller-->
         <scene sceneID="TRa-l0-fD8">
             <objects>
-                <viewController id="RGP-ul-4pf" sceneMemberID="viewController">
+                <viewController id="RGP-ul-4pf" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="97y-BE-cbr"/>
                         <viewControllerLayoutGuide type="bottom" id="QgE-vZ-qe9"/>
@@ -96,7 +93,7 @@
         <!--View Controller-->
         <scene sceneID="482-b8-ws3">
             <objects>
-                <viewController id="mcs-mn-eff" sceneMemberID="viewController">
+                <viewController id="mcs-mn-eff" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="taO-eH-192"/>
                         <viewControllerLayoutGuide type="bottom" id="6ph-fX-PW8"/>
@@ -120,7 +117,7 @@
         <!--View Controller-->
         <scene sceneID="GTK-PD-Z9X">
             <objects>
-                <viewController id="ceB-9d-rqD" sceneMemberID="viewController">
+                <viewController id="ceB-9d-rqD" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JEd-d7-D9o"/>
                         <viewControllerLayoutGuide type="bottom" id="ASA-gz-xSg"/>
@@ -144,7 +141,7 @@
         <!--View Controller-->
         <scene sceneID="HAy-PC-uSd">
             <objects>
-                <viewController id="S5Y-uM-qWE" sceneMemberID="viewController">
+                <viewController id="S5Y-uM-qWE" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NUU-Yz-ATa"/>
                         <viewControllerLayoutGuide type="bottom" id="sQm-uc-ltr"/>
@@ -162,7 +159,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="RGP-ul-4pf" kind="showDetail" id="Tcp-li-XOY"/>
+                                    <segue destination="RGP-ul-4pf" kind="show" id="Dr5-hC-lka"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-uU-wW2">
@@ -170,7 +167,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="mcs-mn-eff" kind="showDetail" id="ncD-M1-F33"/>
+                                    <segue destination="mcs-mn-eff" kind="show" id="Pcn-GB-tgg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsK-7i-COo">
@@ -178,7 +175,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ofz-MS-MOg" kind="showDetail" id="oG1-Pd-682"/>
+                                    <segue destination="ofz-MS-MOg" kind="show" id="ny1-EQ-BM9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -192,7 +189,7 @@
         <!--View Controller-->
         <scene sceneID="V1L-94-Fhr">
             <objects>
-                <viewController id="cOl-9X-2L8" sceneMemberID="viewController">
+                <viewController id="cOl-9X-2L8" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RMe-vT-SSC"/>
                         <viewControllerLayoutGuide type="bottom" id="mRP-vl-U5i"/>
@@ -205,12 +202,12 @@
                                 <rect key="frame" x="0.0" y="77" width="375" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyz-R4-KRG">
-                                <rect key="frame" x="154" y="606" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-Rn-dcV">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ceB-9d-rqD" kind="showDetail" id="tE2-Zl-BKc"/>
+                                    <segue destination="ceB-9d-rqD" kind="show" id="yba-rG-Cdu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,7 +221,7 @@
         <!--View Controller-->
         <scene sceneID="nVT-zv-2wl">
             <objects>
-                <viewController id="cZB-WT-lfR" sceneMemberID="viewController">
+                <viewController id="cZB-WT-lfR" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fVd-4X-q81"/>
                         <viewControllerLayoutGuide type="bottom" id="iha-yz-SaM"/>
@@ -264,7 +261,7 @@
         <!--View Controller-->
         <scene sceneID="jiF-o8-Nio">
             <objects>
-                <viewController id="Zbu-QC-5K8" sceneMemberID="viewController">
+                <viewController id="Zbu-QC-5K8" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ndt-YI-Rp3"/>
                         <viewControllerLayoutGuide type="bottom" id="WdC-5X-3T1"/>
@@ -288,7 +285,7 @@
         <!--View Controller-->
         <scene sceneID="VTD-lp-ZGe">
             <objects>
-                <viewController id="viF-BU-Yct" sceneMemberID="viewController">
+                <viewController id="viF-BU-Yct" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c2H-Am-sEg"/>
                         <viewControllerLayoutGuide type="bottom" id="CqM-S4-pwc"/>
@@ -312,7 +309,7 @@
         <!--View Controller-->
         <scene sceneID="o3q-Wo-Lfk">
             <objects>
-                <viewController id="dKa-eD-fxO" sceneMemberID="viewController">
+                <viewController id="dKa-eD-fxO" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adq-Hm-GKc"/>
                         <viewControllerLayoutGuide type="bottom" id="LIN-mU-eKK"/>
@@ -322,7 +319,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="j3I-f9-017">
-                                <rect key="frame" x="0.0" y="92" width="375" height="482"/>
+                                <rect key="frame" x="0.0" y="127" width="375" height="482"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFF-5z-h8H">
@@ -330,7 +327,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="S5Y-uM-qWE" kind="showDetail" id="9iz-z8-9by"/>
+                                    <segue destination="S5Y-uM-qWE" kind="show" id="sgB-dS-VqH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -344,7 +341,7 @@
         <!--View Controller-->
         <scene sceneID="4h9-tt-Oqg">
             <objects>
-                <viewController id="lEO-ZQ-qdF" sceneMemberID="viewController">
+                <viewController id="lEO-ZQ-qdF" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nqk-io-s8R"/>
                         <viewControllerLayoutGuide type="bottom" id="Hgd-LW-cX7"/>
@@ -362,7 +359,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="cOl-9X-2L8" kind="showDetail" id="znc-8h-YKK"/>
+                                    <segue destination="cOl-9X-2L8" kind="show" id="wiR-YC-Ih2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -376,7 +373,7 @@
         <!--View Controller-->
         <scene sceneID="DJB-jL-Sy3">
             <objects>
-                <viewController id="gFs-mG-24O" sceneMemberID="viewController">
+                <viewController id="gFs-mG-24O" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j5t-DP-dIk"/>
                         <viewControllerLayoutGuide type="bottom" id="jDf-aQ-aSk"/>
@@ -394,7 +391,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="cZB-WT-lfR" kind="showDetail" id="Ddu-Kp-hhE"/>
+                                    <segue destination="cZB-WT-lfR" kind="show" id="mj4-X1-ZNp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -417,16 +414,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-3D-KCR">
-                                <rect key="frame" x="0.0" y="76" width="375" height="515"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ts-mc-yia">
                                 <rect key="frame" x="138" y="599" width="99" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="dining room"/>
                                 <connections>
-                                    <segue destination="lEO-ZQ-qdF" kind="showDetail" id="Obq-hD-fk3"/>
+                                    <segue destination="lEO-ZQ-qdF" kind="show" id="UhO-8O-bPp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98v-qh-Gdr">
@@ -434,7 +427,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="stairs up"/>
                                 <connections>
-                                    <segue destination="gFs-mG-24O" kind="showDetail" id="S5t-pl-nKD"/>
+                                    <segue destination="gFs-mG-24O" kind="show" id="bCN-8K-0If"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JES-9N-rCf">
@@ -442,15 +435,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lbrary"/>
                                 <connections>
-                                    <segue destination="dKa-eD-fxO" kind="showDetail" id="kEw-89-dzN"/>
+                                    <segue destination="dKa-eD-fxO" kind="show" id="zlF-2z-FWY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-fB-E6h">
+                                <rect key="frame" x="268" y="34" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="returnToFirst:" destination="C78-3R-3wU" eventType="touchUpInside" id="BzD-HO-dsd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coat_room" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-3D-KCR">
+                                <rect key="frame" x="0.0" y="76" width="375" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="coatRoom" destination="XHH-3D-KCR" id="Py1-h7-3D9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BH-6d-5Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,15 +474,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhZ-1N-DhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="-560.86956521739137"/>
+            <point key="canvasLocation" x="-561" y="-561"/>
         </scene>
     </scenes>
     <resources>
         <image name="back_porch" width="1024" height="1024"/>
         <image name="bathroom" width="1024" height="1024"/>
         <image name="bedroom" width="1024" height="1024"/>
+        <image name="coat_room" width="1024" height="1024"/>
         <image name="dining_room" width="1024" height="1024"/>
         <image name="dungeon" width="1024" height="1024"/>
+        <image name="front_door" width="1024" height="1024"/>
         <image name="kitchen" width="1024" height="1001"/>
         <image name="labratory" width="1024" height="1024"/>
         <image name="library" width="1024" height="1001"/>
